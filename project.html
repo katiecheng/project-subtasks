@@ -1,0 +1,8 @@
+<!doctype html>
+<title>Project</title>
+{% if name %}
+  {% set project_name = name.split('-') | join(' ') %}
+  <h1> {{ project_name }} </h1>
+{% else %}
+  <h1> You'll need to brainstorm some projects! </h1>
+{% endif %}
